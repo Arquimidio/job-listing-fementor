@@ -21,7 +21,7 @@ body{
     background-color: var(--gray-bg);
     background-image: url("../../../public/images/bg-header-mobile.svg");
     background-repeat: no-repeat;
-    background-size: cover auto;
+    background-size: 100% auto;
     padding: 0px 0.6rem;
 }
 

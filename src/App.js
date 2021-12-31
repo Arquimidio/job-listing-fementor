@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Cards from './components/Cards'
 import FilterManagement from './components/FilterManagement';
-import './components/css/FilterManagement.css'
+import './components/css/Mobile.css'
 import './components/css/Responsive.css'
 
 
