@@ -20,22 +20,23 @@ const SingleCard = ({ info, handler}) => {
 
     return(
         <section className={`card${featured? " card--featured": ""}`}>
-            <article>
+            <article className='card__info-container'>
                 <img src={logo} alt="" />
-                {/* Renders the company info area */}
-                <p className='card__top-info'>
-                    <span className='card__company'>{company}</span>
-                    {isNew && <span className='card__new-tag'>NEW!</span>}
-                    {featured && <span className='card__featured-tag'>FEATURED</span>}
-                </p>
-
-                {/*Renders the main info area*/}
-                <h3>{position}</h3>
-                <p className='card__time-space-info'>
-                    {postedAt} &nbsp; &#9679; &nbsp;
-                    {contract} &nbsp; &#9679; &nbsp;
-                    {location}
-                </p>
+                <div>
+                    {/* Renders the company info area */}
+                    <p className='card__top-info'>
+                        <span className='card__company'>{company}</span>
+                        {isNew && <span className='card__new-tag'>NEW!</span>}
+                        {featured && <span className='card__featured-tag'>FEATURED</span>}
+                    </p>
+                     {/*Renders the main info area*/}
+                     <h3>{position}</h3>
+                     <p className='card__time-space-info'>
+                        {postedAt} &nbsp; &#9679; &nbsp;
+                        {contract} &nbsp; &#9679; &nbsp;
+                        {location}
+                     </p> 
+                </div> 
                 <hr />
             </article>
             <article className='card__filter-tags'>

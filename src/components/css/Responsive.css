@@ -2,4 +2,21 @@
     body{
         background-image: url("../../../public/images/bg-header-desktop.svg");
     }
+
+    .card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card img{
+        width: 8rem;
+        position: static;
+        flex-shrink: 0;
+    }
+
+    .card__info-container{
+        display: flex;
+        gap: 2rem;
+    }
 }
