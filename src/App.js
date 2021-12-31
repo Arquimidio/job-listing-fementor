@@ -189,14 +189,14 @@ function App() {
   
 
   return (
-    <div>
+    <main>
       {filters[0]? <FilterManagement filters={filters} deleteFilter={deleteFilter} />:null}
       {/* Creates all job cards*/}
       <Cards 
         data={filtered} 
         handler={filter}
       />
-    </div>
+    </main>
   );
 }
 

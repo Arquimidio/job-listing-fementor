@@ -1,6 +1,6 @@
 import FilterTag from './FilterTag'
 
-const SingleCard = ({ info, handler, setFilters, filters }) => {
+const SingleCard = ({ info, handler}) => {
 
     // Destructure the job object that came from the server
     const {
@@ -31,11 +31,12 @@ const SingleCard = ({ info, handler, setFilters, filters }) => {
 
                 {/*Renders the main info area*/}
                 <h3>{position}</h3>
-                <p>
-                    {postedAt} . 
-                    {contract} . 
+                <p className='card__time-space-info'>
+                    {postedAt} &nbsp; &#9679; &nbsp;
+                    {contract} &nbsp; &#9679; &nbsp;
                     {location}
                 </p>
+                <hr />
             </article>
             <article className='card__filter-tags'>
                 {/* Renders the Filter tags that control the cards that will be showed*/}

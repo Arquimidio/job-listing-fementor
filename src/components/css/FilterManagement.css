@@ -18,18 +18,26 @@
 }
 
 body{
- background-color: var(--gray-bg)   
+    background-color: var(--gray-bg);
+    background-image: url("../../../public/images/bg-header-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover auto;
+    padding: 0px 0.6rem;
+}
+
+main{
+    margin-top: 10rem;
 }
 
 nav{
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.226);
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: white;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .filter{
@@ -58,6 +66,7 @@ nav{
     align-items: center;
     height: 100%;
     padding: 10px;
+    font-weight: var(--bold-font);
 }
 
 .tag-container__btn{
@@ -99,6 +108,10 @@ nav{
     font-weight: bolder;
 }
 
+.card__time-space-info{
+    color: var(--general-cyan)
+}
+
 .card__filter-tags{
     display: flex;
     gap: 1rem;
@@ -106,7 +119,6 @@ nav{
 }
 
 .card__filter-tags *{
-    padding: 5px;
     border-radius: 2px;
     cursor: pointer;
 }
