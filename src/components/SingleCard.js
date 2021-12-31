@@ -19,14 +19,14 @@ const SingleCard = ({ info, handler}) => {
     } = info
 
     return(
-        <section className="card">
+        <section className={`card${featured? " card--featured": ""}`}>
             <article>
                 <img src={logo} alt="" />
                 {/* Renders the company info area */}
-                <p>
+                <p className='card__top-info'>
                     <span className='card__company'>{company}</span>
-                    {isNew && <span>NEW!</span>}
-                    {featured && <span>FEATURED!</span>}
+                    {isNew && <span className='card__new-tag'>NEW!</span>}
+                    {featured && <span className='card__featured-tag'>FEATURED</span>}
                 </p>
 
                 {/*Renders the main info area*/}
