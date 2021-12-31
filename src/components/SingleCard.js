@@ -24,7 +24,7 @@ const SingleCard = ({ info, handler, setFilters, filters }) => {
                 <img src={logo} alt="" />
                 {/* Renders the company info area */}
                 <p>
-                    {company}
+                    <span className='card__company'>{company}</span>
                     {isNew && <span>NEW!</span>}
                     {featured && <span>FEATURED!</span>}
                 </p>
