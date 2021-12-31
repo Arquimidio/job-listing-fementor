@@ -1,12 +1,15 @@
 @media (min-width: 375px){
     body{
         background-image: url("../../../public/images/bg-header-desktop.svg");
+        background-size: 100% auto;
+        padding: 0 5rem;
     }
 
     .card{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        min-width: 60rem;
     }
 
     .card img{
