@@ -1,0 +1,5 @@
+@media (min-width: 375px){
+    body{
+        background-image: url("../../../public/images/bg-header-desktop.svg");
+    }
+}

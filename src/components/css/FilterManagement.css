@@ -95,6 +95,7 @@ nav{
 .card__top-info{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -138,8 +139,19 @@ nav{
     font-weight: bolder;
 }
 
+h3{
+    font-weight: var(--bold-font);
+}
+
 .card__time-space-info{
     color: var(--general-cyan)
+}
+
+hr{
+    background-color: var(--general-cyan);
+    border: none;
+    height: 1px;
+    margin: 1rem 0;
 }
 
 .card__filter-tags{

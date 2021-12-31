@@ -1,4 +1,3 @@
-import './css/FilterManagement.css'
 const FilterManagement = ({ filters, deleteFilter }) => {
     return (
         <nav>
