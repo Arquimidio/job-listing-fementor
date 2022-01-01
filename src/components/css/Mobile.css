@@ -64,9 +64,13 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding: 10px;
+    padding: 0.8rem;
     font-weight: var(--bold-font);
+}
+
+.tag-container__text:hover{
+    background-color: var(--primary);
+    color: var(--gray-filter);
 }
 
 .tag-container__btn{
@@ -81,6 +85,18 @@ nav{
     color: #fff;
     font-weight: var(--bold-font);
     cursor: pointer;
+}
+
+.filter-management__clear-filters-btn{
+    cursor: pointer;
+    color: var(--general-cyan);
+    font-weight: var(--bold-font);
+}
+
+.filter-management__clear-filters-btn:hover{
+    text-decoration: underline;
+    color: var(--primary);
+
 }
 
 .card{
@@ -141,6 +157,11 @@ nav{
 
 h3{
     font-weight: var(--bold-font);
+}
+
+h3:hover{
+    color: var(--primary);
+    cursor: pointer;
 }
 
 .card__time-space-info{

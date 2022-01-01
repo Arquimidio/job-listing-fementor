@@ -182,6 +182,10 @@ function App() {
     setFilters(filters.filter(elt => elt !== text))
   }
 
+  const clearFilters = () => {
+    setFilters([])
+  }
+
   useEffect(() => {
     if(filters){
       displayWithFilters()
@@ -192,7 +196,12 @@ function App() {
 
   return (
     <main>
-      {filters[0]? <FilterManagement filters={filters} deleteFilter={deleteFilter} />:null}
+      {filters[0]  ?<FilterManagement 
+                      filters={filters} 
+                      deleteFilter={deleteFilter} 
+                      clearFilters={clearFilters}
+                      />
+                    :null}
       {/* Creates all job cards*/}
       <Cards 
         data={filtered} 

@@ -1,4 +1,4 @@
-const FilterManagement = ({ filters, deleteFilter }) => {
+const FilterManagement = ({ filters, deleteFilter, clearFilters }) => {
     return (
         <nav>
             <div className='filter-management__filters'>
@@ -16,7 +16,10 @@ const FilterManagement = ({ filters, deleteFilter }) => {
                         )    
                 })}
             </div>
-            <div>Clear</div>
+            <div 
+                className="filter-management__clear-filters-btn" 
+                onClick={clearFilters}
+            >Clear</div>
         </nav>
     )
 }
