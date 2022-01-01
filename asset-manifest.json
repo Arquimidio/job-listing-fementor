@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.67fcf6c9.css",
-    "main.js": "/static/js/main.86b13d5b.js",
-    "static/media/bg-header-desktop.svg": "/static/media/bg-header-desktop.8694f4668c94cdc9d16e.svg",
-    "index.html": "/index.html",
-    "static/media/bg-header-mobile.svg": "/static/media/bg-header-mobile.9cb13612af1317a665a2.svg",
-    "main.67fcf6c9.css.map": "/static/css/main.67fcf6c9.css.map",
-    "main.86b13d5b.js.map": "/static/js/main.86b13d5b.js.map"
+    "main.css": "/job-listing-fementor/static/css/main.c2cf2857.css",
+    "main.js": "/job-listing-fementor/static/js/main.86b13d5b.js",
+    "static/media/bg-header-desktop.svg": "/job-listing-fementor/static/media/bg-header-desktop.8694f4668c94cdc9d16e.svg",
+    "index.html": "/job-listing-fementor/index.html",
+    "static/media/bg-header-mobile.svg": "/job-listing-fementor/static/media/bg-header-mobile.9cb13612af1317a665a2.svg",
+    "main.c2cf2857.css.map": "/job-listing-fementor/static/css/main.c2cf2857.css.map",
+    "main.86b13d5b.js.map": "/job-listing-fementor/static/js/main.86b13d5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.67fcf6c9.css",
+    "static/css/main.c2cf2857.css",
     "static/js/main.86b13d5b.js"
   ]
 }
