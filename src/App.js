@@ -166,6 +166,8 @@ function App() {
   const filter = (text) => {
     if(!filters.includes(text)){
       setFilters(filters.concat(text))
+    }else{
+      setFilters(filters.filter(rule => rule !== text))
     }
   }
 
