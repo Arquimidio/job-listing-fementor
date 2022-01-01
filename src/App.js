@@ -196,12 +196,12 @@ function App() {
 
   return (
     <main>
-      {filters[0]  ?<FilterManagement 
-                      filters={filters} 
-                      deleteFilter={deleteFilter} 
-                      clearFilters={clearFilters}
-                      />
-                    :null}
+      <FilterManagement
+        filters={filters} 
+        deleteFilter={deleteFilter} 
+        clearFilters={clearFilters}
+      />
+
       {/* Creates all job cards*/}
       <Cards 
         data={filtered} 

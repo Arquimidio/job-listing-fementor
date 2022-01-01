@@ -1,7 +1,7 @@
 const FilterManagement = ({ filters, deleteFilter, clearFilters }) => {
     return (
-        <nav>
-            <div className='filter-management__filters'>
+        <nav className={`${filters[0]? "":"hidden"}`}>
+            <div className={`filter-management__filters`}>
                 {filters.map(filter => {
                     return(
                             <div className="filter-management__tag-container">
