@@ -3,7 +3,8 @@ const FilterTag = ({ text, handler}) => {
         <div>
             <span 
                   className="tag-container__text tag-container__text--hoverable filter" 
-                  onClick={() => handler( text )}>
+                  onClick={() => handler( text )}
+            >
                   {text}
             </span>
         </div>
