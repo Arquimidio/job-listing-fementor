@@ -161,11 +161,12 @@ nav{
     font-weight: bolder;
 }
 
-h3{
+h1{
     font-weight: var(--bold-font);
+    font-size: 1.7rem;
 }
 
-h3:hover{
+h1:hover{
     color: var(--primary);
     cursor: pointer;
 }

@@ -19,8 +19,8 @@ const SingleCard = ({ info, handler}) => {
     } = info
 
     return(
-        <section className={`card${featured? " card--featured": ""}`}>
-            <article className='card__info-container'>
+        <div className={`card${featured? " card--featured": ""}`}>
+            <div className='card__info-container'>
                 <img src={logo} alt="" />
                 <div>
                     {/* Renders the company info area */}
@@ -30,7 +30,7 @@ const SingleCard = ({ info, handler}) => {
                         {featured && <span className='card__featured-tag'>FEATURED</span>}
                     </p>
                      {/*Renders the main info area*/}
-                     <h3>{position}</h3>
+                     <h1>{position}</h1>
                      <p className='card__time-space-info'>
                         {postedAt} &nbsp; &#9679; &nbsp;
                         {contract} &nbsp; &#9679; &nbsp;
@@ -38,15 +38,15 @@ const SingleCard = ({ info, handler}) => {
                      </p> 
                 </div> 
                 <hr />
-            </article>
-            <article className='card__filter-tags'>
+            </div>
+            <div className='card__filter-tags'>
                 {/* Renders the Filter tags that control the cards that will be showed*/}
                 <FilterTag handler={handler} text={role}/>
                 <FilterTag handler={handler} text={level}/>
                 {languages.map(lang => <FilterTag handler={handler} text={lang}/>)}
                 {tools.map(tool => <FilterTag handler={handler} text={tool}/>)}
-            </article>
-        </section>
+            </div>
+        </div>
     )
 }
 
